@@ -127,7 +127,7 @@ body .no_margin {
   margin-right: 0;
 }
 
-.one-only {
+.one-full {
   background: #ff6666;
   width: 100%;
   height: 50px;
@@ -136,6 +136,6 @@ body .no_margin {
   margin-right: 2.51256%;
   width: 100%;
 }
-.one-only:last-child {
+.one-full:last-child {
   margin-right: 0;
 }

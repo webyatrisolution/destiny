@@ -78,7 +78,7 @@ module.exports = function( grunt ){
 				files: [
 					'<%= dirs.styles %>/sass/*.scss'
 				],
-				tasks: ['sass', 'cssmin']
+				tasks: ['sass', '!cssmin']
 			},
 			scripts: {
 				files: [

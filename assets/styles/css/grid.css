@@ -47,7 +47,6 @@ footer {
 -------------------------------------------------------------- */
 .flex-column {
   z-index: 200;
-  float: left;
   min-height: 1px;
   width: 100%;
   position: relative;

@@ -61,24 +61,13 @@ module.exports = function( grunt ){
 			}
 		},
 
-		// Minify all .css files.
-		cssmin: {
-			frontend: {
-				expand: true,
-				cwd: '<%= dirs.styles %>/css/',
-				src: ['*.css'],
-				dest: '<%= dirs.styles %>/css/',
-				ext: '.min.css'
-			}
-		},
-
 		// Watch changes for assets.
 		watch: {
 			styles: {
 				files: [
 					'<%= dirs.styles %>/sass/*.scss'
 				],
-				tasks: ['sass', 'cssmin']
+				tasks: ['sass']
 			},
 			scripts: {
 				files: [
@@ -119,20 +108,14 @@ module.exports = function( grunt ){
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
 	// Register tasks
 	grunt.registerTask( 'default', [
-		'css',
-		'uglify'
-	]);
-
-	grunt.registerTask( 'css', [
 		'sass',
-		'cssmin'
+		'uglify'
 	]);
 
 	grunt.registerTask( 'deploy', [

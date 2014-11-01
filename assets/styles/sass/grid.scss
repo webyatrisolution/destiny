@@ -4,18 +4,98 @@
 @import 'variables/neat-grid';
 @import "neat";
 
-// Enter Neat
-section {
-  @include outer-container;
-  aside { @include span-columns(3); }
-  article { @include span-columns(9); }
+// Load Global Variables
+@import 'variables/layout';
+@import 'variables/z-index';
+
+$gw-column: 30px;
+$gw-gutter: 50px;
+
+$flex-gutter: 6%;
+
+@function axis-flex-grid( $columns: 1, $container-columns: 1 ) {
+	$width: ( ( ( 100% - ( $flex-gutter * ( $container-columns - 1 ) ) ) / $container-columns ) * $columns ) + ( $flex-gutter * ( $columns - 1 ) );
+	@return $width;
 }
 
-$mobile: new-breakpoint(max-width 480px 4);
-
-.element {
-	@include media($mobile) {
-		@include span-columns(4);
-	}
+@function axis-flex-grid-no-margin( $columns: 1, $container-columns: 1 ) {
+	@return percentage( $columns/$container-columns );
 }
 
+
+$fg-column: 60px;             // Column Width
+$fg-gutter: 25px;             // Gutter Width
+$fg-max-columns: 12;          // Total Columns For Main Container
+
+footer {
+	/*background-color: #232323;*/
+	color: #ddd;
+	border-color: #444;
+	padding: 15px 0 0px 0;
+	z-index: $z-index-1;
+	height: auto;
+	min-height: 130px;
+}
+
+.container {
+	position: relative;
+	width: 68em;
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+}
+
+/* = Columns for better content seperation
+-------------------------------------------------------------- */
+body .first,
+body .no_margin {
+	margin-left: 0;
+}
+
+#top .no_margin {
+	margin-top: 0;
+}
+
+.flex-column {
+	z-index: $z-index-2;
+	float: left;
+	min-height: 1px;
+	width: 100%;
+	@include position( relative, null null null null );
+}
+
+.one-sixth {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(2 of 12);
+}
+
+.one-fifth {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(2.4 of 12);
+}
+
+.one-fourth {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(3 of 12);
+}
+
+.one-third {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(4 of 12);
+}
+
+.one-half {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(6 of 12);
+}
+
+.one-only {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+	@include span-columns(12 of 12);
+}

@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'axisicons';
+	src:url('axisicons/axisicons.eot');
+	src:url('axisicons/axisicons.eot?#iefix') format('embedded-opentype'),
+		url('axisicons/axisicons.ttf') format('truetype'),
+		url('axisicons/axisicons.woff') format('woff'),
+		url('axisicons/axisicons.svg#axisicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="axisicon-"] {
+	font-family: 'axisicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.axisicon-logo:before {
+	content: "\e600";
+}
+.axisicon-home:before {
+	content: "\e601";
+}
+.axisicon-palette:before {
+	content: "\e602";
+}
+.axisicon-layout:before {
+	content: "\e603";
+}
+.axisicon-header:before {
+	content: "\e604";
+}
+.axisicon-sidebar:before {
+	content: "\e605";
+}
+.axisicon-footer:before {
+	content: "\e606";
+}
+.axisicon-typography:before {
+	content: "\e607";
+}
+.axisicon-link:before {
+	content: "\e608";
+}
+.axisicon-globe:before {
+	content: "\e609";
+}
+.axisicon-upload:before {
+	content: "\e60a";
+}
+.axisicon-download:before {
+	content: "\e60b";
+}
+.axisicon-trash:before {
+	content: "\e60c";
+}
+.axisicon-import:before {
+	content: "\e60d";
+}
+.axisicon-export:before {
+	content: "\e60e";
+}
+.axisicon-support:before {
+	content: "\e60f";
+}
+.axisicon-idea:before {
+	content: "\e610";
+}
+.axisicon-paypal:before {
+	content: "\e611";
+}
+.axisicon-tools:before {
+	content: "\e612";
+}
+.axisicon-cog:before {
+	content: "\e613";
+}
+.axisicon-cogs:before {
+	content: "\e614";
+}
+.axisicon-schedule:before {
+	content: "\e615";
+}
+.axisicon-edit:before {
+	content: "\e616";
+}
+.axisicon-chat:before {
+	content: "\e617";
+}
+.axisicon-cart:before {
+	content: "\e618";
+}
+.axisicon-images:before {
+	content: "\e619";
+}
+.axisicon-video:before {
+	content: "\e61a";
+}
+.axisicon-toolbox:before {
+	content: "\e61b";
+}
+.axisicon-identity:before {
+	content: "\e61c";
+}

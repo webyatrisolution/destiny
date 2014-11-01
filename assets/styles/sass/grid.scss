@@ -11,3 +11,11 @@ section {
   article { @include span-columns(9); }
 }
 
+$mobile: new-breakpoint(max-width 480px 4);
+
+.element {
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+

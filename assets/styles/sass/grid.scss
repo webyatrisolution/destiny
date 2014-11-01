@@ -1,4 +1,7 @@
 @import "bourbon";
+
+// Load Neat Grid
+@import 'variables/neat-grid';
 @import "neat";
 
 // Enter Neat
@@ -7,3 +10,4 @@ section {
   aside { @include span-columns(3); }
   article { @include span-columns(9); }
 }
+

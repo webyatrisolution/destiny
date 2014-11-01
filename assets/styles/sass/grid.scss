@@ -94,7 +94,7 @@ body .no_margin {
 	@include span-columns(6 of 12);
 }
 
-.one-only {
+.one-full {
 	background: tint( red, 40% );
 	@include size(100% 50px);
 	@include span-columns(12 of 12);

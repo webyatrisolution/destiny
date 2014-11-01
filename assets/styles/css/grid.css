@@ -32,7 +32,7 @@ footer {
   padding: 15px 0 0px 0;
   z-index: 100;
   height: auto;
-  min-height: 130px;
+  min-height: 70px;
 }
 
 .container {
@@ -45,15 +45,6 @@ footer {
 
 /* = Columns for better content seperation
 -------------------------------------------------------------- */
-body .first,
-body .no_margin {
-  margin-left: 0;
-}
-
-#top .no_margin {
-  margin-top: 0;
-}
-
 .flex-column {
   z-index: 200;
   float: left;
@@ -62,55 +53,16 @@ body .no_margin {
   position: relative;
 }
 
-.one-sixth {
+.one-full {
   background: #ff6666;
   width: 100%;
   height: 50px;
   float: left;
   display: block;
   margin-right: 2.51256%;
-  width: 14.57286%;
-}
-.one-sixth:last-child {
-  margin-right: 0;
-}
-
-.one-fifth {
-  background: #ff6666;
   width: 100%;
-  height: 50px;
-  float: left;
-  display: block;
-  margin-right: 2.51256%;
-  width: 17.98995%;
 }
-.one-fifth:last-child {
-  margin-right: 0;
-}
-
-.one-fourth {
-  background: #ff6666;
-  width: 100%;
-  height: 50px;
-  float: left;
-  display: block;
-  margin-right: 2.51256%;
-  width: 23.11558%;
-}
-.one-fourth:last-child {
-  margin-right: 0;
-}
-
-.one-third {
-  background: #ff6666;
-  width: 100%;
-  height: 50px;
-  float: left;
-  display: block;
-  margin-right: 2.51256%;
-  width: 31.65829%;
-}
-.one-third:last-child {
+.one-full:last-child {
   margin-right: 0;
 }
 
@@ -127,15 +79,119 @@ body .no_margin {
   margin-right: 0;
 }
 
-.one-full {
+.one-third {
   background: #ff6666;
   width: 100%;
   height: 50px;
   float: left;
   display: block;
   margin-right: 2.51256%;
-  width: 100%;
+  width: 31.65829%;
 }
-.one-full:last-child {
+.one-third:last-child {
+  margin-right: 0;
+}
+
+.two-third {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 65.82915%;
+}
+.two-third:last-child {
+  margin-right: 0;
+}
+
+.one-fourth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 23.11558%;
+}
+.one-fourth:last-child {
+  margin-right: 0;
+}
+
+.three-fourth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 74.37186%;
+}
+.three-fourth:last-child {
+  margin-right: 0;
+}
+
+.one-fifth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 17.98995%;
+}
+.one-fifth:last-child {
+  margin-right: 0;
+}
+
+.two-fifth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 38.49246%;
+}
+.two-fifth:last-child {
+  margin-right: 0;
+}
+
+.three-fifth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 58.99497%;
+}
+.three-fifth:last-child {
+  margin-right: 0;
+}
+
+.four-fifth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 79.49749%;
+}
+.four-fifth:last-child {
+  margin-right: 0;
+}
+
+.one-sixth {
+  background: #ff6666;
+  width: 100%;
+  height: 50px;
+  float: left;
+  display: block;
+  margin-right: 2.51256%;
+  width: 14.57286%;
+}
+.one-sixth:last-child {
   margin-right: 0;
 }

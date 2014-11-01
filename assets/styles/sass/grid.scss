@@ -45,6 +45,21 @@ footer {
 	clear: both;
 }
 
+.one-full,
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth,
+.two-third,
+.three-fourth,
+.two-fifth,
+.three-fifth,
+.four-fifth {
+	background: tint( red, 40% );
+	@include size(100% 50px);
+}
+
 /* = Columns for better content seperation
 -------------------------------------------------------------- */
 .flex-column {
@@ -55,67 +70,45 @@ footer {
 }
 
 .one-full {
-	background: tint( red, 40% );
-	@include size(100% 50px);
-	@include span-columns(12 of 12);
+	@include span-columns(12);
 }
 
 .one-half {
-	background: tint( red, 40% );
-	@include size(100% 50px);
-	@include span-columns(6 of 12);
+	@include span-columns(6);
 }
 
 .one-third {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(4 of 12);
 }
 
 .two-third {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(8 of 12);
 }
 
 .one-fourth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(3 of 12);
 }
 
 .three-fourth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(9 of 12);
 }
 
 .one-fifth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(2.4 of 12);
 }
 
 .two-fifth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(4.8 of 12);
 }
 
 .three-fifth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(7.2 of 12);
 }
 
 .four-fifth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(9.6 of 12);
 }
 
 .one-sixth {
-	background: tint( red, 40% );
-	@include size(100% 50px);
 	@include span-columns(2 of 12);
 }

@@ -43,8 +43,7 @@ footer {
   clear: both;
 }
 
-.one-full,
-.one-half,
+.one-full, .one-half,
 .one-third,
 .one-fourth,
 .one-fifth,
@@ -53,7 +52,11 @@ footer {
 .three-fourth,
 .two-fifth,
 .three-fifth,
-.four-fifth {
+.four-fifth,
+.two-sixth,
+.three-sixth,
+.four-sixth,
+.five-sixth {
   background: #ff6666;
   width: 100%;
   height: 50px;
@@ -68,31 +71,31 @@ footer {
   position: relative;
 }
 
+/* 1/1 */
 .one-full {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 100%;
+  width: 102.35765%;
 }
 .one-full:last-child {
-  margin-right: 0;
+  width: 100%;
 }
 
+/* 1/2 */
 .one-half {
   float: left;
-  display: block;
-  margin-right: 2.51256%;
-  width: 48.74372%;
+  margin-right: 2.35765%;
+  width: 48.82117%;
 }
 .one-half:last-child {
   margin-right: 0;
 }
 
+/* 1/3 */
 .one-third {
   float: left;
-  display: block;
-  margin-right: 2.51256%;
-  width: 31.65829%;
+  margin-right: 2.35765%;
+  width: 31.76157%;
 }
 .one-third:last-child {
   margin-right: 0;
@@ -101,18 +104,19 @@ footer {
 .two-third {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 65.82915%;
+  margin-right: 2.35765%;
+  width: 65.88078%;
 }
 .two-third:last-child {
   margin-right: 0;
 }
 
+/* 1/4 */
 .one-fourth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 23.11558%;
+  margin-right: 2.35765%;
+  width: 23.23176%;
 }
 .one-fourth:last-child {
   margin-right: 0;
@@ -121,18 +125,19 @@ footer {
 .three-fourth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 74.37186%;
+  margin-right: 2.35765%;
+  width: 74.41059%;
 }
 .three-fourth:last-child {
   margin-right: 0;
 }
 
+/* 1/5 */
 .one-fifth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 17.98995%;
+  margin-right: 2.35765%;
+  width: 18.11388%;
 }
 .one-fifth:last-child {
   margin-right: 0;
@@ -141,8 +146,8 @@ footer {
 .two-fifth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 38.49246%;
+  margin-right: 2.35765%;
+  width: 38.58541%;
 }
 .two-fifth:last-child {
   margin-right: 0;
@@ -151,8 +156,8 @@ footer {
 .three-fifth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 58.99497%;
+  margin-right: 2.35765%;
+  width: 59.05694%;
 }
 .three-fifth:last-child {
   margin-right: 0;
@@ -161,19 +166,60 @@ footer {
 .four-fifth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 79.49749%;
+  margin-right: 2.35765%;
+  width: 79.52847%;
 }
 .four-fifth:last-child {
   margin-right: 0;
 }
 
+/* 1/6 */
 .one-sixth {
   float: left;
   display: block;
-  margin-right: 2.51256%;
-  width: 14.57286%;
+  margin-right: 2.35765%;
+  width: 14.70196%;
 }
 .one-sixth:last-child {
+  margin-right: 0;
+}
+
+.two-sixth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.two-sixth:last-child {
+  margin-right: 0;
+}
+
+.three-sixth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.three-sixth:last-child {
+  margin-right: 0;
+}
+
+.four-sixth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+.four-sixth:last-child {
+  margin-right: 0;
+}
+
+.fifth-sixth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.fifth-sixth:last-child {
   margin-right: 0;
 }

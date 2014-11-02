@@ -1,31 +1,11 @@
 @import "bourbon";
 
 // Load Neat Grid
-@import 'variables/neat-grid';
+@import 'variables/grid-settings';
 @import "neat";
 
 // Load Global Variables
-@import 'variables/layout';
 @import 'variables/z-index';
-
-$gw-column: 30px;
-$gw-gutter: 50px;
-
-$flex-gutter: 6%;
-
-@function axis-flex-grid( $columns: 1, $container-columns: 1 ) {
-	$width: ( ( ( 100% - ( $flex-gutter * ( $container-columns - 1 ) ) ) / $container-columns ) * $columns ) + ( $flex-gutter * ( $columns - 1 ) );
-	@return $width;
-}
-
-@function axis-flex-grid-no-margin( $columns: 1, $container-columns: 1 ) {
-	@return percentage( $columns/$container-columns );
-}
-
-
-$fg-column: 60px;             // Column Width
-$fg-gutter: 25px;             // Gutter Width
-$fg-max-columns: 12;          // Total Columns For Main Container
 
 footer {
 	/*background-color: #232323;*/
@@ -45,8 +25,7 @@ footer {
 	clear: both;
 }
 
-.one-full,
-.one-half,
+.one-full, .one-half,
 .one-third,
 .one-fourth,
 .one-fifth,
@@ -55,7 +34,11 @@ footer {
 .three-fourth,
 .two-fifth,
 .three-fifth,
-.four-fifth {
+.four-fifth,
+.two-sixth,
+.three-sixth,
+.four-sixth,
+.five-sixth {
 	background: tint( red, 40% );
 	@include size(100% 50px);
 }
@@ -69,46 +52,68 @@ footer {
 	@include position( relative, null null null null );
 }
 
+/* 1/1 */
 .one-full {
-	@include span-columns(12);
+	@include span-columns(12, block-collapse);
 }
 
+/* 1/2 */
 .one-half {
-	@include span-columns(6);
+	@include span-columns(6, no-display);
 }
 
+/* 1/3 */
 .one-third {
-	@include span-columns(4 of 12);
+	@include span-columns(4, no-display);
 }
 
 .two-third {
-	@include span-columns(8 of 12);
+	@include span-columns(8);
 }
 
+/* 1/4 */
 .one-fourth {
-	@include span-columns(3 of 12);
+	@include span-columns(3);
 }
 
 .three-fourth {
-	@include span-columns(9 of 12);
+	@include span-columns(9);
 }
 
+/* 1/5 */
 .one-fifth {
-	@include span-columns(2.4 of 12);
+	@include span-columns(2.4);
 }
 
 .two-fifth {
-	@include span-columns(4.8 of 12);
+	@include span-columns(4.8);
 }
 
 .three-fifth {
-	@include span-columns(7.2 of 12);
+	@include span-columns(7.2);
 }
 
 .four-fifth {
-	@include span-columns(9.6 of 12);
+	@include span-columns(9.6);
 }
 
+/* 1/6 */
 .one-sixth {
-	@include span-columns(2 of 12);
+	@include span-columns(2);
+}
+
+.two-sixth {
+	@include span-columns(4);
+}
+
+.three-sixth {
+	@include span-columns(6);
+}
+
+.four-sixth {
+	@include span-columns(8);
+}
+
+.fifth-sixth {
+	@include span-columns(10);
 }

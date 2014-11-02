@@ -13,3 +13,19 @@ $max-width: em(1088) !default; // Max-width of the outer container
 $border-box-sizing: true !default; // Makes all elements have a border-box layout
 $default-feature: min-width; // Default @media feature for the breakpoint() mixin
 $default-layout-direction: LTR !default;
+
+// Screen sizes. Can be done em(320)
+$smallest-screen:  320px;
+$smaller-screen:   480px;
+$small-screen:     810px;
+$medium-screen:    1023px;
+$large-screen:     1180px;
+$huge-screen:      1600px;
+
+// Breakpoints
+$smallest-screen-up:  new-breakpoint(min-width $smallest-screen  4);
+$smaller-screen-up:   new-breakpoint(min-width $smaller-screen   6);
+$small-screen-up:     new-breakpoint(min-width $small-screen    12);
+$medium-screen-up:    new-breakpoint(min-width $medium-screen   12);
+$large-screen-up:     new-breakpoint(min-width $large-screen    12);
+$huge-screen-up:      new-breakpoint(min-width $huge-screen     12);
